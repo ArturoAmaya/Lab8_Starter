@@ -3,11 +3,11 @@
 const functions = require('../code-to-unit-test/unit-test-me.js');
 
 test('checks first valid phone number', () => {
-    expect(functions.isPhoneNumber('8585871121')).toBe(true);
+    expect(functions.isPhoneNumber('(858) 587-1121')).toBe(true);
 });
 
 test('checks second valid phone number', () => {
-    expect(functions.isPhoneNumber('8585342230')).toBe(true);
+    expect(functions.isPhoneNumber('(858) 534-2230')).toBe(true);
 });
 
 test('checks first invalid phone number', () => {
